@@ -1,6 +1,6 @@
 # FastAPI E-commerce Scraper and Extractor
 
-A FastAPI application that scrapes e-commerce websites and extracts product details using a combination of BeautifulSoup and [BERT](https://huggingface.co/google-bert/bert-base-uncased).
+A FastAPI application that scrapes e-commerce websites and extracts product details using a combination of BeautifulSoup and <a href="https://huggingface.co/google-bert/bert-base-uncased" target="_blank">BERT</a>
 
 ## Choice of LLM and Rationale
 
