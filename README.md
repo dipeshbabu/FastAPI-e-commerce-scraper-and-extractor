@@ -125,3 +125,37 @@ The API is implemented using FastAPI, known for its performance and ease of use.
   }
 }
 ```
+
+## Enhanced HTML Processing with BERT and Heuristics
+
+**Dynamic Rule-Based System**
+
+Develop rules that adapt based on the structure detected by BERT and BeautifulSoup. For example:
+
+- If a price is found next to a product name, but the exact HTML structure varies, create rules that handle these variations.
+- Use BERT to understand context within product descriptions and map these descriptions back to their HTML tags using patterns detected during processing.
+
+**Fallback Mechanisms**
+
+Implement fallback mechanisms when BERT's predictions are ambiguous. For instance:
+
+- If BERT fails to extract a clear price, use regular expressions and heuristics to identify and extract the price.
+
+## Performance Metrics and Evaluation
+
+- **Accuracy**: Evaluated by comparing the extracted data against known correct values.
+- **Precision and Recall**: Calculated for attribute extraction to understand the model's effectiveness in correctly identifying and extracting relevant information.
+
+## Security Considerations
+
+- **Input Validation**: Sanitized HTML inputs to prevent injection attacks.
+- **Rate Limiting**: Implemented rate limiting to prevent abuse of the API.
+
+## Future Improvements
+
+- **Scalability**: Implement load balancing to handle high traffic.
+- **Enhanced Model**: Fine-tune BERT for better performance on e-commerce data.
+
+## Comparative Analysis
+
+BERT was chosen over other models like LLaMA or Vicuna due to its strong performance in text processing tasks, well-balanced trade-off between complexity and availability of pre-trained models. Future iterations could explore these models for potentially improved performance or specific advantages in understanding HTML content.
